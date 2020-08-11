@@ -1,0 +1,70 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Zilla Slab', serif;
+}
+
+header {
+    padding: 10px;
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-family: 'Vollkorn', serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1, div#info {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    padding: 20px;
+}
+
+div#info {
+    margin-left: 100px;
+    padding-left: 300px;
+}
+
+div.container {
+    width: 80% ;
+    height: 100% auto;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+div#quiz, div#results {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+}
+
+div#quiz{
+    width: 60%;
+}
+
+div#results {
+    position: fixed;
+    width: 30%;
+    margin-left: 40px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+label {
+    display: block;
+    padding-bottom: 5px;
+    font-size: 20px;
+}

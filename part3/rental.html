@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/styleRental.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet"></head>
+    <title>Dodgy Brakes Car Rental - Rental Page</title>
+</head>
+<body>
+    <header>
+        <div id="burgerMenu">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Login - Register</a>
+                <a href="#">Fees</a>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        
+        <div id="header-main">
+            <div id="name">
+                <h1> Dodgy Brakes Car Rental </h1>
+                <div id="currentDate"></div>
+            </div>
+            <img src="./assets/images/logo.png" width="150" length="150" alt="logo" > 
+        </div>
+    </header>
+    
+    <div class="container">
+        <div id="order_form">
+            <section id="client_search">
+                <label for="client_search">Client Search</label>
+                <input type="text" name="input_client_search" id="input_client_search">
+            </section>
+            
+            <section id="client_results">
+                
+            </section>
+            
+            <section id="rental_form">
+                <h2>Rental Form</h2>
+                <div>
+                    <label for="c_firstname">First name:</label>
+                    <input type="text" name="c_firstname" id="c_firstname" disabled="true">
+                </div>
+                
+                <div>
+                    <label for="c_lastname">Last name:</label>
+                    <input type="text" name="c_lastname" id="c_lastname" disabled="true">
+                </div>
+                
+                <div>
+                    <label for="c_address">Address:</label>
+                    <input type="text" name="c_address" id="c_address" disabled="true">
+                </div>
+                
+                <div>
+                    <label for="c_provState">Province/State:</label>
+                    <input type="text" name="c_provState" id="c_provState" disabled="true">
+                </div>
+                
+                <div>
+                    <label for="c_email">Email:</label>
+                    <input type="email" name="c_email" id="c_email" disabled="true">
+                </div>
+                
+                <div>
+                    <label for="c_phone">Phone:</label>
+                    <input type="tel" name="c_phone" id="c_phone" disabled="true">
+                </div>
+                
+                <div class="vtype">
+                    <h4>Vehicle Type:</h4>
+                    <label>
+                        <img src="./assets/images/compact.jpg" alt="compact" width="200">
+                        <input type="radio" name="vehicle_type[]" value="Compact" disabled="true">
+                        <span>Compact - $15/day</span>
+                    </label>
+                    
+                    <label>
+                        <img src="./assets/images/midsize.jpg" alt="midsize" width="200">
+                        <input type="radio" name="vehicle_type[]" value="Mid-size" disabled="true">
+                        <span>Mid-size - $20/day</span>
+                    </label>
+                    
+                    <label>
+                        <img src="./assets/images/luxury1200x800.jpg" alt="luxury" width="200">
+                        <input type="radio" name="vehicle_type[]" value="Luxury" disabled="true">
+                        <span>Luxury - $35/day</span>
+                    </label>
+                    
+                    <label>
+                        <img src="./assets/images/truck.jpg" alt="truck" width="200">
+                        <input type="radio" name="vehicle_type[]" value="Van/Truck" disabled="true">
+                        <span>Van/Truck - $40/day</span>
+                    </label>
+                </div>
+                
+                <div class="voptions">
+                    <h4>Vehicle Options:</h4>
+                    <label>
+                        <input type="checkbox" name="vehicle_options[]" value="rack" disabled="true">
+                        <span> Roof Rack / Bicycle Rack - $5/day</span>
+                    </label>
+                    
+                    <label>
+                        <input type="checkbox" name="vehicle_options[]" value="gps" disabled="true">
+                        <span> GPS - $10/day</span>
+                    </label>
+                    
+                    <label>
+                        <input type="checkbox" name="vehicle_options[]" value="childseat" disabled="true">
+                        <span> Child Seat - Free</span>
+                    </label>
+                </div>
+                
+                <div>
+                    <h4>Number of Days for Rental:</h4>
+                    <input type="number" name="rental_days" id="rental_days" min="1" max="30" disabled="true">
+                </div>
+                
+                <div>
+                    <button id="submit_form" onclick="submitForm(client);" disabled="true">Submit Rental Order Form</button>
+                </div>
+            </section>
+        </div>
+        
+        <div id="receipt">
+            <section id="rental_display">
+                
+            </section>
+        </div>
+    </div>
+    
+    <footer>
+        
+        <div id="stayConnected">
+            <h4>Stay Connected</h4>
+            <label for="newsletter">Subscribe to our newsletter: </label>
+            <input type="email" name="newsletter" id="newsletter" placeholder="email@example.ca">
+            <button>Sign-Up></button>
+            <img src="./assets/images/socialmedia.png" height="80">
+        </div>
+        
+        <div id="footer-main">
+            <div id="committed">
+                <h4>Commited with our community</h4>
+                <p>We provide employment to Calgarians and support Albertans with disabilities. <a href="#">Learn More</a></p>
+            </div>
+            <div id="sitemap">
+                <h4>Sitemap</h4>
+                <a href="#">About Us</a>
+                <a href="#">Our Vision</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        
+    </footer>
+    <script type="text/javascript" src="assets/script/rental.js"></script>
+</body>
+</html>

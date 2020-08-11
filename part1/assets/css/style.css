@@ -1,0 +1,58 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Libre Baskerville', serif;
+}
+
+header, footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    position: static;
+}
+
+div.container {
+    width: 80%;
+    height: 100% auto;
+    margin: 30px auto;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+div#search_input div{
+    margin-bottom: 20px;
+}
+
+div#search_input, div#search_results {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    padding: 20px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    margin: 0;
+    width: 100%;
+}
+
+a {
+    color: yellow;
+}
